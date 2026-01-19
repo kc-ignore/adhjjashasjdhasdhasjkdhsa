@@ -137,6 +137,7 @@ do
 
     s:Toggle({Name = "Hold RMB to Aim", Default = true, Callback = function(v) aim.holdToUse = v end})
     s:Slider({Name = "FOV Size", Min = 30, Max = 800, Default = 90, Callback = function(v) aim.fov = v end})
+	s:Slider({Name = "Max Distance", Min = 100, Max = 6000, Default = 1200, Callback = function(v) aim.maxDistance = v end})
     s:Dropdown({Name = "Target Part", Content = {"Head", "HumanoidRootPart"}, Default = "Head", Callback = function(v) aim.targetPart = v end})
     s:Toggle({Name = "Wall Check", Default = false, Callback = function(v) aim.wallCheck = v end})
 end
